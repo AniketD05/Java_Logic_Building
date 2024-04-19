@@ -111,14 +111,27 @@ public class MustDoPatterns {
 
     public void pattern7(int num) {
 
+        
+        //         *
+        //       * * *
+        //     * * * * *
+        //   * * * * * * *
+        // * * * * * * * * *
+         
+         
+
         for (int i = 1; i <= num; i++) {
-            for (int j = 1; j <= num - i; j++) {
-                System.out.print(j);
-                if (j == 5) {
-                    System.out.println();
-                }
+            for (int j = 1; j <= num - i + 1; j++) {
+                System.out.print("   ");
             }
-            System.out.println("* ");
+
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print(" * ");
+            }
+
+            for (int j = 1; j <= num - i + 1; j++) {
+                System.out.print("   ");
+            }
             System.out.println();
         }
     }
@@ -129,12 +142,12 @@ public class MustDoPatterns {
 
         int num = 5;
 
-        // obj.pattern1(num);
-        // obj.pattern2(num);
-        // obj.pattern3(num);
-        // obj.pattern4(num);
-        // obj.pattern5(num);
-        // obj.pattern6(num);
-        // obj.pattern7(num);
+        //obj.pattern1(num);
+        //obj.pattern2(num);
+        //obj.pattern3(num);
+        //obj.pattern4(num);
+        //obj.pattern5(num);
+        //obj.pattern6(num);
+        obj.pattern7(num);
     }
 }
