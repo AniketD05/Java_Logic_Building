@@ -249,10 +249,10 @@ public class MustDoPatterns {
         // obj.pattern5(num);
         // obj.pattern6(num);
         // obj.pattern7(num);
-        // obj.pattern8(num);
+         obj.pattern8(num);
         // obj.pattern9(num);
         // obj.pattern10(num);
         // obj.pattern11(num);
-        obj.pattern12(num);
+        // obj.pattern12(num);
     }
 }
